@@ -15,7 +15,7 @@ function HeaderCartButton(props) {
     const btnClasses = `${classes.button} ${btn ? classes.bump :""}`
  
    useEffect(()=>{
-    if(cartctx.items.length === 0){
+    if(items.length === 0){
       return;
     }
        setBtn(true)
