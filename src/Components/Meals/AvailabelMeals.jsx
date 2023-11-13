@@ -30,7 +30,7 @@ import classes from "./AvailabelMeals.module.css";
 // ];
 
    
- const URL = "https://food-orders-ccc7a-default-rtdb.firebaseio.com/meals.json"
+ const URL = "https://newfoodorders-662fe-default-rtdb.firebaseio.com/meals.json"
  
 function AvailabelMeals() {
 
@@ -72,11 +72,11 @@ useEffect(()=>{
     })
 },[]);
 
-   if(isLoading){
+    if(isLoading){
      return <section className={classes.mealsLoading}>
       <p>Loading...</p>
-     </section>
-   }
+      </section>
+    }
 
    if(httpError){
     return <section className={classes.MealsError}>
